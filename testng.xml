@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel ="tests" name="Suite">
+	<listeners>
+		<listener class-name = "rahulshettyacademy.Testcomponents.Listeners"/>
+	</listeners>
+<!--	<groups>
+		<run>
+			<include name ="ErrorHandling"/>    comment h ye bhi
+			<include name = "Purchase"/>
+		</run>
+	</groups>-->
+
+  <test thread-count="5" name="Submit order Project">
+    <classes>
+      <class name="rahulshettyacademy.pageobjects.Submitorderproject"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="Error handling project">
+    <classes>
+      <class name="rahulshettyacademy.pageobjects.Errorhandlingproject"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
